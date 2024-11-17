@@ -32,11 +32,8 @@ let posts = [
     { id: 1, content: 'Post 1', likes: 0, dislikes: 0, comments: [] },
     { id: 2, content: 'Post 2', likes: 0, dislikes: 0, comments: [] },
   ];
-  
 
-app.get("/", (res, req) => {
-    res.send(`<h3>This is a new server</h3>`);
-})
+
 // Create a new post
 app.post("/posts", async (req, res) => {
     const { content } = req.body;

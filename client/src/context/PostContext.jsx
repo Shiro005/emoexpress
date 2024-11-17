@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
-const API_BASE = "https://nither-webreich-communitys-projects.vercel.app/"; 
+const API_BASE = "http://localhost:5000"; 
 export const PostContext = createContext();
 
 export const PostProvider = ({ children }) => {
