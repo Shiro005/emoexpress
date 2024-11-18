@@ -10,7 +10,7 @@ const Footer = () => {
     // Fetch the view data from the backend
     const fetchViews = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/views");
+            const response = await axios.get("https://nither.vercel.app/api/views");
             setViews(response.data);
         } catch (err) {
             console.error("Error fetching view data:", err);
@@ -26,7 +26,7 @@ const Footer = () => {
                 sessionStorage.setItem("hasVisited", "true");
 
                 // Track the view in the backend
-                await axios.post("http://localhost:5000/api/track-view", {
+                await axios.post("https://nither.vercel.app/api/track-view", {
                     userAgent: navigator.userAgent,
                     timestamp: new Date().toISOString(),
                 });
