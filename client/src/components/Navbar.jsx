@@ -27,7 +27,7 @@ const Navbar = () => {
             to="/"
             className="text-2xl font-bold text-white hover:text-gray-200 transition-all text-shadow-xl animate__animated animate__pulse animate__infinite flex flex-col"
           >
-            <span className="text-blue-400"> इमो </span> Express
+            <span className="text-blue-400"> Emo </span> Express
           </Link>
 
           <div className="text-md font-semibold text-white bg-white/20 px-4 py-2 rounded-lg">
